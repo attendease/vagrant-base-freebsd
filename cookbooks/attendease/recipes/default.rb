@@ -34,3 +34,25 @@ directory '/usr/lib/debug' do
   action :delete
   recursive true
 end
+
+file '/var/db/pkg/repo-FreeBSD.sqlite' do
+  action :delete
+end
+
+execute 'unprotected /usr/lib32' do
+  command 'chflags -R noschg /usr/lib32'
+end
+
+directory '/usr/lib32' do
+  action :delete
+  recursive true
+end
+
+execute 'remove profiled libraries' do
+  command "find /usr/lib -name '*_p.a' -delete"
+end
+
+execute 'remove profiled libraries' do
+  command "find /usr/lib -name '*_p.a' -delete"
+end
+
