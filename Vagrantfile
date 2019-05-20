@@ -76,5 +76,6 @@ Vagrant.configure('2') do |config|
   # SHELL
   config.vm.provision 'chef_solo' do |chef|
     chef.add_recipe 'attendease'
+    chef.version = '14.12.9'
   end
 end

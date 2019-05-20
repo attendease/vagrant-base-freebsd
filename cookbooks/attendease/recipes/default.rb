@@ -1,3 +1,6 @@
+# devel/rbenv
+# devel/ruby-build
+# sysutils/rubygem-bundler
 %w[
 shells/bash
 databases/postgresql96-server
@@ -7,12 +10,9 @@ databases/redis
 devel/awscli
 devel/git
 devel/icu
-devel/rbenv
-devel/ruby-build
 editors/vim-console
 graphics/ImageMagick7-nox11
 security/openssl
-sysutils/rubygem-bundler
 sysutils/tmux
 www/nginx
 ].each do |p|

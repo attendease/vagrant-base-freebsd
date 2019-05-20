@@ -23,3 +23,7 @@ This may time out waiting to provision, so if it does, run this after:
 ## Add it locally to test before uploading
 
     vagrant box add attendease-freebsd-base vagrant-freebsd.box
+
+Notes about versioning...
+
+https://github.com/hollodotme/Helpers/blob/master/Tutorials/vagrant/self-hosted-vagrant-boxes-with-versioning.md
